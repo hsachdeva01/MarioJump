@@ -2,7 +2,17 @@
   font-family: mario;
   src: url("./mario.ttf")
 }
-html, body, div, span, applet, object, iframe,
+@font-face {
+  font-family: superMario;
+  src: url("./SuperMario.ttf")
+}
+@keyframes show-info {
+100% {
+  color: black;
+  background-color: rgba(353, 92, 45, 0.7);
+  }
+}
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -21,39 +31,25 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
+} */
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 
-div{
-  position: absolute;
-  display: flex;
-  font-family: mario;
-  font-size: 50px;
-  color: red;
-  margin-top: 20px;
-  margin-left: 10px;
-}
-section.mario-game{
-    position: fixed;
-    font-family: fantasy;
-    color: red;
-    font-weight: bold;
-    font-size: 50px;
-}
 #mycanvas {
-  margin-left: 450px;
   margin-top: 25px;
   margin-right: 50px;
-  border: solid 10px black;
+  border: solid 5px black;
   z-index: 1;
   display: grid;
   background-image: url(../images//game_cover.png);
   background-size: 100%;
   border-radius: 8px;
+  justify-content: center;
+  text-align: center;
+  justify-self: center;
 }
 
 main.main {
@@ -64,48 +60,75 @@ main.main {
 
 .background {
   width: 100%;
-  
-}
-
-section.info {
-  float: right;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-}
-
-.game-title {
-  /* margin-top: 50px;
-  margin-bottom: 25px;
-  width: 250px; */
  
 }
 
-img.ground {
+img.background {
   z-index: -1;
   position: absolute;
   left: 0px;
   width: 100%;
   background-color: #009dff;
 }
-
-
-ul.links {
-  display: flex;
-  flex-direction: row;
-  padding-left: 40px;
+.my-links *:hover {
+  opacity: 0.9;
 }
 
-img.icon {
-  padding: 0px;
-  width: 58%;
-  margin-left: 0px;
-  margin-right: 1px;
-  cursor: pointer;
-  z-index: -1;
-  display: flex;
+.linkedin {
+  height: 80px;
+  position: absolute;
+  right: 20px;
 }
 
-li {
-  list-style: none;
+.github {
+  height: 55px;
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
+
+.game-name{
+  display: flex;
+  position: absolute;
+  margin: 10%;
+  font-family: superMario;
+  font-size: 50px;
+  color: red;
+  margin-left: 10px;
+}
+
+.controls{
+  position: absolute;
+  display: flex;
+  margin-left: 70%;
+  /* margin: 10%; */
+  height: 100%;
+  align-items: center;
+  font-family: superMario;
+  font-size: 40px;
+  color: yellow;
+}
+
+span.arrow-right {
+  position: absolute;
+  display: flex;
+  margin-left: 70%;
+  ALIGN-ITEMS: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 40px;
+  color: yellow;
+  font-size: 20px;
+}
+
+span.arrow-left {
+  position: absolute;
+  display: flex;
+  margin-left: 70%;
+  ALIGN-ITEMS: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 60px;
+  color: yellow;
+  font-size: 20px;
 }
