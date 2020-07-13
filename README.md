@@ -1,5 +1,5 @@
 # Mario Jump
-[Play Mario Jump](https://hsachdeva01.github.io/)
+[Play Mario Jump](https://hsachdeva01.github.io/MarioJump/)
 
 Mario Jump is an additictive game inspired by Doodle Jump.
 
