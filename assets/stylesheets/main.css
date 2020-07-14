@@ -132,3 +132,15 @@ span.arrow-left {
   color: yellow;
   font-size: 20px;
 }
+
+span.music {
+  position: absolute;
+  display: flex;
+  margin-left: 70%;
+  ALIGN-ITEMS: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 80px;
+  color: yellow;
+  font-size: 20px;
+}
