@@ -15,4 +15,4 @@ Mario Jump is an additictive game inspired by Doodle Jump.
 * The player performs a super jump when landing on blue platforms
 * The player performs a super jump when landing on brown platforms
 
-![](/assets/images/Mario%20Jump.png)
+![](/assets/images/MarioJump%20Game%20Cover.png)
