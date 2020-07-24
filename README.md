@@ -14,6 +14,7 @@ Mario Jump is an additictive game inspired by Doodle Jump.
 ## Game Rules
 * Use left arrow key or A key to move player left
 * Use right arrow key or D key to move player right
+* Use M to toggle music
 * The player performs a super jump when landing on blue platforms
 * The player performs a super jump when landing on brown platforms
 
