@@ -34,3 +34,14 @@ Mario Jump is an additictive game inspired by Doodle Jump.
     this.game.player.fallStop();
   };
  ```
+ * This determines if the player has not landed on the platform. 
+ ```
+  checkFall() {
+    if (this.Y < height - this.height) {
+      this.setPosition(this.X, this.Y + this.fallSpeed);
+      this.fallSpeed++;
+    } else {
+        this.game.gameOver();
+    }
+  }
+```
